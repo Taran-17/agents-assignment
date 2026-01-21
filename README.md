@@ -1,4 +1,9 @@
 # Filler Aware-Interaction Voice Agent
+QUICK DEMO- https://drive.google.com/file/d/17o6SzJQ61ZEnhWcK2l1LQX6P_WZYA46t/view?usp=sharing where we have                 
+○ The agent ignoring "yeah" while talking. 
+○ The agent stopping for "stop."
+○ The agent responding to "yeah" when silent.
+
 
 Kelly is a high-performance voice agent that implements a robust interaction handling layer on top of the LiveKit framework. She processes interruptions with a sophisticated strategy that balances speed (VAD) with semantic understanding (STT).
 
@@ -73,4 +78,5 @@ python examples/voice_agents/basic_agent.py console
 - **Latency**: The intent determination window is capped at 350ms.
 - **Accuracy**: By combining STT-validation with a debounced commit, we eliminate "false starts" where an agent cuts off due to background chair noise or accidental fillers.
 - **Safety**: The interaction lock prevents the agent from triggering twice in a rapid-fire sequence, protecting the LLM from redundant turns.
+
 
